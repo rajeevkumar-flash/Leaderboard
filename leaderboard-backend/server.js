@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 5000;
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:3001',
-  'https://leaderboard-852d.vercel.app',
+  'https://leaderboard-yjzh.vercel.app',
 ];
 
 const corsOptions = {
