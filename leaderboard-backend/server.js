@@ -16,7 +16,7 @@ const corsOptions = {
     const allowedOrigins = [
       'http://localhost:3000',
       'http://localhost:3001',
-      process.env.FRONTEND_URL
+      'https://leaderboard-852d.vercel.app'
     ].filter(Boolean); // Remove any undefined values
     
     // Allow requests with no origin (like mobile apps or curl requests)
