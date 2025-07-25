@@ -13,11 +13,7 @@ const PORT = process.env.PORT || 5000;
 // -------------------
 // ✅ CORS Configuration
 // -------------------
-const allowedOrigins = [
-  'http://localhost:3000',
-  'http://localhost:3001',
-  'https://leaderboard-yjzh.vercel.app',
-];
+const allowedOrigins = (process.env.ALLOWED_ORIGINS || '').split(',').map(origin => origin.trim());
 
 const corsOptions = {
   origin: function (origin, callback) {
